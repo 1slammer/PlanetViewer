@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		CBF010851B5F32BE005194B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF010841B5F32BE005194B8 /* AppDelegate.swift */; };
-		CBF010871B5F32BE005194B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF010861B5F32BE005194B8 /* ViewController.swift */; };
+		CBF010871B5F32BE005194B8 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF010861B5F32BE005194B8 /* MyViewController.swift */; };
 		CBF0108A1B5F32BE005194B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF010881B5F32BE005194B8 /* Main.storyboard */; };
 		CBF0108C1B5F32BE005194B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF0108B1B5F32BE005194B8 /* Images.xcassets */; };
 		CBF0108F1B5F32BE005194B8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBF0108D1B5F32BE005194B8 /* LaunchScreen.xib */; };
 		CBF0109B1B5F32BE005194B8 /* PlanetOrganizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF0109A1B5F32BE005194B8 /* PlanetOrganizerTests.swift */; };
+		CBF010A51B5F38E3005194B8 /* NavalDataGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF010A41B5F38E3005194B8 /* NavalDataGetter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		CBF0107F1B5F32BE005194B8 /* PlanetOrganizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanetOrganizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF010831B5F32BE005194B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBF010841B5F32BE005194B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CBF010861B5F32BE005194B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBF010861B5F32BE005194B8 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		CBF010891B5F32BE005194B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBF0108B1B5F32BE005194B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CBF0108E1B5F32BE005194B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CBF010941B5F32BE005194B8 /* PlanetOrganizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanetOrganizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF010991B5F32BE005194B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBF0109A1B5F32BE005194B8 /* PlanetOrganizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetOrganizerTests.swift; sourceTree = "<group>"; };
+		CBF010A41B5F38E3005194B8 /* NavalDataGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavalDataGetter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				CBF010841B5F32BE005194B8 /* AppDelegate.swift */,
-				CBF010861B5F32BE005194B8 /* ViewController.swift */,
+				CBF010861B5F32BE005194B8 /* MyViewController.swift */,
+				CBF010A41B5F38E3005194B8 /* NavalDataGetter.swift */,
 				CBF010881B5F32BE005194B8 /* Main.storyboard */,
 				CBF0108B1B5F32BE005194B8 /* Images.xcassets */,
 				CBF0108D1B5F32BE005194B8 /* LaunchScreen.xib */,
@@ -161,6 +164,7 @@
 				TargetAttributes = {
 					CBF0107E1B5F32BE005194B8 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 4EKX9224RV;
 					};
 					CBF010931B5F32BE005194B8 = {
 						CreatedOnToolsVersion = 6.3;
@@ -212,7 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBF010871B5F32BE005194B8 /* ViewController.swift in Sources */,
+				CBF010A51B5F38E3005194B8 /* NavalDataGetter.swift in Sources */,
+				CBF010871B5F32BE005194B8 /* MyViewController.swift in Sources */,
 				CBF010851B5F32BE005194B8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,9 +347,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PlanetOrganizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +360,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PlanetOrganizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
